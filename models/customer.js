@@ -21,7 +21,6 @@ const Customer = mongoose.model('Customer', new Schema({
 }));
 
 function validateCustomer(customer) {
-    console.log(customer);
     // process.exit();
     const schema = {
         name: Joi.string().min(5).max(50).required(),

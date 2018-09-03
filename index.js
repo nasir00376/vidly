@@ -10,8 +10,6 @@ app.use(express.json());
 app.use('/api/genres', genres);
 app.use('/api/customers', customers);
 
-// Routes
-
 
 const port = process.env.PORT | 4000;
 app.listen(port, () => console.log(`Server is listening on port: ${port}`));
